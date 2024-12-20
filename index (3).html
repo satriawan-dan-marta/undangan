@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Satriawan & Marta</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="overlay">
+            <h1>Undangan Peresmian Pernikahan</h1>
+            <h2>Satriawan & Marta</h2>
+            <p>Sabtu, 21 Desember 2024</p>
+            <p>Perumahan Nuansa Citra Madani, Blok E No. 1, Pasir Putih, Tanah Merah, Kampar</p>
+            <a href="#details" class="btn">Lihat Detail Acara</a>
+        </div>
+    </header>
+
+    <!-- Detail Acara Section -->
+    <section id="details" class="details">
+        <h3>Detail Acara</h3>
+        <div class="detail-item">
+            <i class="icon">📅</i>
+            <p><strong>Hari/Tanggal:</strong> Sabtu, 21 Desember 2024</p>
+        </div>
+        <div class="detail-item">
+            <i class="icon">⏰</i>
+            <p><strong>Waktu:</strong> Pukul 10.00 WIB s/d selesai</p>
+        </div>
+        <div class="detail-item">
+            <i class="icon">📍</i>
+            <p><strong>Lokasi:</strong> Perumahan Nuansa Citra Madani, Blok E No. 1, Pasir Putih, Tanah Merah, Kampar</p>
+        </div>
+        <a href="https://maps.app.goo.gl/qExSnC9akPnT9erG6" target="_blank" class="btn">Lihat Lokasi di Google Maps</a>
+        <!-- Google Map Embed -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1186.1465251829632!2d101.46930729003897!3d0.43098645474230346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a59a8b735f6f%3A0x5afe9dd0eefc0d2b!2sPerum%20Nuansa%20Citra%20Madani!5e0!3m2!1sid!2sid!4v1734678268145!5m2!1sid!2sid" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h3>Gallery Prewedding</h3>
+        <div class="gallery-images">
+            <img src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/2.jpg" alt="Foto Prewedding 1">
+            <img src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/3.jpg" alt="Foto Prewedding 2">
+            <img src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/4.jpg" alt="Foto Prewedding 3">
+            <img src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/5.jpg" alt="Foto Prewedding 4">
+            <img src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/8.jpg" alt="Foto Prewedding 5">
+            <img src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/9.jpg" alt="Foto Prewedding 6">
+            <img src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/10.jpg" alt="Foto Prewedding 7">
+            <img src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/11.jpg" alt="Foto Prewedding 8">
+            <img src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/12.jpg" alt="Foto Prewedding 9">
+            <img src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/13.jpg" alt="Foto Prewedding 10">
+        </div>
+    </section>
+
+    <!-- Musik Section -->
+    <section class="music">
+        <h3>Musik Latar</h3>
+        <audio id="background-music" loop autoplay>
+            <source src="https://github.com/satriawandanmarta/undanganperesmianpernikahan/raw/main/you-are-falling-in-love-you.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung pemutar audio.
+        </audio>
+        <button id="music-control" class="btn">Pause Musik</button>
+    </section>
+
+    <section class="quote">
+        <h3>Quotes Cinta</h3>
+        <blockquote>“Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia.”   Matius 19:6 </blockquote>
+    </section>
+
+    <footer>
+        <p>With Love,</p>
+        <h2>Satriawan & Marta</h2>
+    </footer>
+
+    <!-- JavaScript untuk Kontrol Musik -->
+    <script>
+        const music = document.getElementById('background-music');
+        const controlButton = document.getElementById('music-control');
+
+        controlButton.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                controlButton.textContent = 'Pause Musik';
+            } else {
+                music.pause();
+                controlButton.textContent = 'Play Musik';
+            }
+        });
+    </script>
+</body>
+</html>
